@@ -1,0 +1,20 @@
+.mainnav {
+	z-index: 1;
+	background-color: #f39c2d;
+	color: white;
+	padding: 1rem;
+	text-align: center;
+	height: 3rem;
+}
+
+.navcontent {
+	width: min(100% - 2rem, 62rem);
+	margin-inline: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	max-width: 8rem;
+	transform: translateY(-1rem);
+}
