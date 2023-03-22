@@ -21,9 +21,9 @@ export default function Home() {
 						className={styles.img}
 						alt={'clash of clans landscape'}
 						priority={true}
-						width={2000}
-						height={2000}
-						quality={100}
+						width={1000}
+						height={1000}
+						quality={50}
 					/>
 					<h2 className={styles.title}>CoCpedia</h2>
 				</Link>
@@ -33,9 +33,9 @@ export default function Home() {
 						className={styles.img}
 						alt={'clash of clans capital mountain landscape'}
 						priority={true}
-						width={2000}
-						height={2000}
-						quality={100}
+						width={1000}
+						height={1000}
+						quality={50}
 					/>
 					<h2 className={styles.title}>Blog</h2>
 				</Link>
@@ -45,9 +45,9 @@ export default function Home() {
 						className={styles.img}
 						alt={'clash of clans image of three barbarians figthing a cannon'}
 						priority={true}
-						width={2000}
-						height={2000}
-						quality={100}
+						width={1000}
+						height={1000}
+						quality={50}
 					/>
 					<h2 className={styles.title}>Shop</h2>
 				</Link>
