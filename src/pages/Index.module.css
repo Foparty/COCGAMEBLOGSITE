@@ -8,6 +8,12 @@
 	z-index: 0;
 }
 
+@media (min-width: 60rem) {
+	.main {
+		flex-direction: row;
+	}
+}
+
 .main > * {
 	display: flex;
 	flex: 1;
