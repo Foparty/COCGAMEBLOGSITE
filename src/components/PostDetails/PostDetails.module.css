@@ -30,9 +30,30 @@
 	border-radius: 0.71rem;
 }
 
+.growning {
+	width: min(100% - 4rem, 62rem);
+	max-height: 20vh;
+	margin-inline: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 0.5rem;
+	overflow: hidden;
+}
+
+.imgcontainer {
+	width: 100%;
+	flex: 0.5;
+	transition: flex 0.5s ease-in;
+}
+
 .imgcarousel {
-	width: 25%;
-	height: auto;
-	float: left;
-	margin: 2rem auto;
+	width: 100%;
+	/* height: auto; */
+	object-fit: contain;
+	object-position: center;
+}
+
+.imgcontainer:hover {
+	flex: 4;
 }

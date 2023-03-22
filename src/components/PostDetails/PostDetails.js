@@ -74,19 +74,23 @@ const PostDetails = ({ post }) => {
 			/>
 			<h1 className={styles.title}>{post.title}</h1>
 			<small className={styles.date}>{moment(post.createdAt).format('DD MMM, YYYY')}</small>
-			{post.postImages.map((image, index) => {
-				return (
-					<Image
-						src={image.url}
-						alt={post.title}
-						width={300}
-						height={300}
-						quality={30}
-						key={index}
-						className={styles.imgcarousel}
-					/>
-				);
-			})}
+
+			<section className={styles.growning}>
+				{post.postImages.map((image, index) => {
+					return (
+						<div className={styles.imgcontainer} key={index}>
+							<Image
+								src={image.url}
+								alt={post.title}
+								width={300}
+								height={300}
+								quality={30}
+								className={styles.imgcarousel}
+							/>
+						</div>
+					);
+				})}
+			</section>
 			{post.content.raw.children.map((typeObj, index) => {
 				const children = typeObj.children.map((item, itemindex) =>
 					getContentFragment(itemindex, item.text, item)
