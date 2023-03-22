@@ -9,3 +9,7 @@
 	border-radius: 50%;
 	border: none;
 }
+
+.back:hover {
+	cursor: pointer;
+}

@@ -58,6 +58,7 @@ body {
 	line-height: 1.5;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
+	color: #2f2f2f;
 }
 
 /* A elements that don't have a class get default styles */
@@ -119,5 +120,9 @@ select {
 @media (prefers-color-scheme: dark) {
 	html {
 		color-scheme: dark;
+		background-color: #282c34;
+	}
+	body {
+		color: #efefef;
 	}
 }

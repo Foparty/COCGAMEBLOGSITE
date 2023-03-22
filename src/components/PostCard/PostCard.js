@@ -5,6 +5,7 @@ import Link from 'next/link';
 import moment from 'moment';
 
 const PostCard = ({ post }) => {
+	console.log(post.categories);
 	return (
 		<article className={styles.singlecard}>
 			<div className={styles.imgcontainer}>
@@ -18,7 +19,6 @@ const PostCard = ({ post }) => {
 						priority={true}
 						className={styles.img}
 					/>
-					{/*<img src={post.featuredImage.url} alt={post.title} className={styles.img} />*/}
 				</Link>
 				<small className={styles.date}>{moment(post.createdAt).format('DD MMM, YYYY')}</small>
 			</div>

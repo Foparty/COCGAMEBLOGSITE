@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './PostDetails.module.css';
 import Image from 'next/image';
 import moment from 'moment';
+import CommentsForm from '../CommentsForm/CommentsForm';
+import Comments from '../Comments/Comments';
 
 const PostDetails = ({ post }) => {
 	const getContentFragment = (index, text, obj, type) => {
@@ -48,12 +50,12 @@ const PostDetails = ({ post }) => {
 				);
 			case 'image':
 				return (
-					<img
+					<Image
 						key={index}
 						alt={obj.title}
-						height={obj.height}
-						width={obj.width}
 						src={obj.src}
+						width={600}
+						height={600}
 						className={styles.inimg}
 					/>
 				);
@@ -97,6 +99,8 @@ const PostDetails = ({ post }) => {
 					);
 					return getContentFragment(index, children, typeObj, typeObj.type);
 				})}
+				<CommentsForm slug={post.slug} />
+				<Comments slug={post.slug} />
 			</div>
 		</article>
 	);

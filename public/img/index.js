@@ -4,3 +4,6 @@ export { default as wallshop } from './wallshop.jpg';
 export { default as wallcontact } from './wallcontact.jpg';
 export { default as working } from './working.jpg';
 export { default as back } from './back-arrow-svgrepo-com.svg';
+export { default as main } from './mainvillage.png';
+export { default as capital } from './capital.png';
+export { default as nocturna } from './nocturna.png';
