@@ -65,8 +65,9 @@ const PostDetails = ({ post }) => {
 		<article>
 			<Image
 				src={post.featuredImage.url}
-				width={2000}
-				height={2000}
+				width={1000}
+				height={1000}
+				quality={30}
 				priority={true}
 				className={styles.cover}
 				alt={post.title}
@@ -78,8 +79,9 @@ const PostDetails = ({ post }) => {
 					<Image
 						src={image.url}
 						alt={post.title}
-						width={1000}
-						height={1000}
+						width={300}
+						height={300}
+						quality={30}
 						key={index}
 						className={styles.imgcarousel}
 					/>

@@ -12,9 +12,9 @@ const PostCard = ({ post }) => {
 					<Image
 						src={post.featuredImage.url}
 						alt={post.title}
-						width={1000}
-						height={1000}
-						quality={100}
+						width={400}
+						height={400}
+						quality={30}
 						priority={true}
 						className={styles.img}
 					/>
