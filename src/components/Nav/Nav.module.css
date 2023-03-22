@@ -1,5 +1,7 @@
 .mainnav {
-	position: relative;
+	position: sticky;
+	top: 0;
+	width: 100%;
 	z-index: 1;
 	background-color: #f39c2d;
 	color: white;
