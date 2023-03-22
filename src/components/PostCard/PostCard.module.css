@@ -1,0 +1,64 @@
+.singlecard {
+	width: min(100%, 28rem);
+	margin-inline: auto;
+	overflow: hidden;
+	/* padding: 1rem; */
+	/* border: 1px solid red; */
+	border-radius: 0.71rem;
+	box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.2);
+	text-align: left;
+}
+
+.imgcontainer {
+	max-height: 15rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+	transform: scale(1);
+	transition: transform 0.2s ease-in-out;
+}
+
+.img:hover {
+	transform: scale(1.1);
+}
+
+.date {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	padding: 0.2rem 1rem;
+	font-weight: bold;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+}
+
+.textcontainer {
+	padding: 0.5rem 1rem 0.3rem 1rem;
+}
+
+.title {
+	font-family: coc;
+	font-size: 1rem;
+	margin-bottom: 0.3rem;
+}
+
+.excerpt {
+	font-size: 0.8rem;
+	line-height: 1.2;
+	margin-bottom: 0.3rem;
+	letter-spacing: 1px;
+}
+
+.date {
+	font-family: coc;
+	font-size: 0.6rem;
+	text-align: right;
+}

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @font-face {
 	font-family: 'coc';
 	src: url(../../public/fonts/supercell-magic-webfont.woff);
@@ -55,6 +56,8 @@ body {
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 }
 
 /* A elements that don't have a class get default styles */
@@ -69,7 +72,7 @@ a {
 /* Make images easier to work with */
 img,
 picture {
-	max-width: 100%;
+	width: 100%;
 	display: block;
 }
 

@@ -1,7 +1,12 @@
+import Categories from '@/components/Categories/Categories';
+import PostCard from '@/components/PostCard/PostCard';
+import PostWidget from '@/components/PostWidget/PostWidget';
 import Head from 'next/head';
 import React from 'react';
+import { getPosts } from '../../services';
+import styles from './Blog.module.css';
 
-const Blog = () => {
+const Blog = ({ posts }) => {
 	return (
 		<>
 			<Head>
@@ -10,8 +15,26 @@ const Blog = () => {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<aside className={styles.aside}>
+				<Categories />
+			</aside>
+			<main className={styles.main}>
+				{posts.map((post) => {
+					return <PostCard post={post.node} key={post.node.title} />;
+				})}
+			</main>
+			<aside className={styles.aside}>
+				<PostWidget />
+			</aside>
 		</>
 	);
 };
 
 export default Blog;
+
+export async function getStaticProps() {
+	const posts = (await getPosts()) || [];
+	return {
+		props: { posts },
+	};
+}

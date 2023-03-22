@@ -1,0 +1,32 @@
+.catcontainer {
+	width: min(100% - 2rem, 62rem);
+	margin: 0.3rem auto;
+	overflow: hidden;
+	/* padding: 1rem; */
+	/* border: 1px solid red; */
+	text-align: left;
+	/* display: flex; */
+	gap: 1rem;
+}
+.btn {
+	margin: 0.3rem 0.7rem;
+	float: left;
+	display: block;
+	width: fit-content;
+	padding: 0.51rem 1.7rem;
+	text-align: center;
+	border-radius: 0.31rem;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	text-transform: capitalize;
+	/* background-color: rgba(54, 54, 54, 0.1); */
+	/* color: rgba(127, 127, 127, 0.75); */
+	background-color: #f69d2d;
+	color: white;
+	transform: scale(1);
+	transition: transform 0.2s ease-in-out;
+}
+.btn:hover {
+	cursor: pointer;
+	transform: scale(1.04);
+}

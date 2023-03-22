@@ -1,0 +1,29 @@
+.container {
+	width: min(100% - 2rem, 62rem);
+	margin: 0.3rem auto;
+}
+
+.each {
+	margin: 1rem 0;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.thumb {
+	width: 2rem;
+	height: 2rem;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+	border: 3px solid white;
+}
+
+.title {
+	font-size: 0.8rem;
+	display: block;
+}
+.date {
+	font-size: 0.6rem;
+	font-style: italic;
+}

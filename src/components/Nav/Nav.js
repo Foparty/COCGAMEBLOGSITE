@@ -10,7 +10,7 @@ const Nav = () => {
 			<div className={styles.navcontent}>
 				{/* empty div for maybe useranme on login or something like that */}
 				<Link href={'/'} className={styles.leftnav}>
-					Back Home
+					Home
 				</Link>
 				<Link href={'/'}>
 					<Image
