@@ -1,4 +1,59 @@
 .main {
-	width: min(100% - 2rem, 62rem);
-	margin-inline: auto;
+	position: relative;
+	width: 100%;
+	height: calc(100vh - 48px);
+	height: calc(100dvh - 48px);
+	display: flex;
+	flex-direction: column;
+	z-index: 0;
+}
+
+.main > * {
+	display: flex;
+	flex: 1;
+	/* border: 2px solid red; */
+	overflow: hidden;
+}
+
+.section {
+	position: relative;
+}
+
+.section > * {
+	position: absolute;
+}
+
+.img {
+	width: 100%;
+	height: auto;
+	flex: 1;
+	object-fit: cover;
+	object-position: center center;
+	max-height: 100%;
+}
+
+.pedia {
+	position: relative;
+}
+
+.blog {
+	position: relative;
+}
+
+.shop {
+	position: relative;
+}
+
+.title {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.link {
+	display: block;
 }

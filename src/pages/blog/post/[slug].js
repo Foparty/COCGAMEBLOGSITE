@@ -2,8 +2,8 @@ import React from 'react';
 import { getPostDetails, getPosts } from '../../../services';
 import styles from './Post.module.css';
 import PostDetails from '@/components/PostDetails/PostDetails';
-import CommentsForm from '@/components/CommentsForm/CommentsForm';
-import Comments from '@/components/Comments/Comments';
+// import CommentsForm from '@/components/CommentsForm/CommentsForm';
+// import Comments from '@/components/Comments/Comments';
 import { useRouter } from 'next/router';
 import Loader from '@/components/Loader/Loader';
 
@@ -16,8 +16,8 @@ const Post = ({ post }) => {
 	return (
 		<main className={styles.main}>
 			<PostDetails post={post} />
-			<CommentsForm slug={post.slug} />
-			<Comments slug={post.slug} />
+			{/* <CommentsForm slug={post.slug} /> */}
+			{/* <Comments slug={post.slug} /> */}
 		</main>
 	);
 };

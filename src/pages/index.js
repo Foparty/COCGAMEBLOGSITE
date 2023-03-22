@@ -1,7 +1,9 @@
 import Head from 'next/head';
 // import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Index.module.css';
+import { wallpedia, wallblog, wallshop } from '../../public/img';
 
 export default function Home() {
 	return (
@@ -13,7 +15,33 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main className={styles.main}>
-				<Link href={'/blog'}>Blog</Link>
+				<Link href={'/enciclopedya'} className={styles.pedia}>
+					<Image
+						src={wallpedia}
+						className={styles.img}
+						alt={'clash of clans landscape'}
+						priority={true}
+					/>
+					<h2 className={styles.title}>CoCpedia</h2>
+				</Link>
+				<Link href={'/blog'} className={styles.blog}>
+					<Image
+						src={wallblog}
+						className={styles.img}
+						alt={'clash of clans capital mountain landscape'}
+						priority={true}
+					/>
+					<h2 className={styles.title}>Blog</h2>
+				</Link>
+				<Link href={'/shop'} className={styles.shop}>
+					<Image
+						src={wallshop}
+						className={styles.img}
+						alt={'clash of clans image of three barbarians figthing a cannon'}
+						priority={true}
+					/>
+					<h2 className={styles.title}>Shop</h2>
+				</Link>
 			</main>
 		</>
 	);
