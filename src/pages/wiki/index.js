@@ -7,7 +7,7 @@ const Wiki = () => {
 	return (
 		<main className={styles.main}>
 			<div className={styles.center}>
-				<Image src={working} width={100} height={100} quality={40} className={styles.img} />
+				<Image src={working} width={1000} height={1000} quality={70} className={styles.img} />
 				<h2>Sorry... the Wiki section is under contruction</h2>
 			</div>
 		</main>

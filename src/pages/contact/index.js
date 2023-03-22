@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Shop.module.css';
+import styles from './Contact.module.css';
 import { working } from '../../../public/img';
 import Image from 'next/image';
 
@@ -8,7 +8,7 @@ const Shop = () => {
 		<main className={styles.main}>
 			<div className={styles.center}>
 				<Image src={working} width={1000} height={1000} quality={80} className={styles.img} />
-				<h2>Sorry... the Shop section is under contruction</h2>
+				<h2>Sorry... the Contact section is under contruction</h2>
 			</div>
 		</main>
 	);
