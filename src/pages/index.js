@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Index.module.css';
-import { wallpedia, wallblog, wallshop } from '../../public/img';
+import { wallpedia, wallblog, wallshop, wallcontact } from '../../public/img';
 
 export default function Home() {
 	return (
@@ -15,7 +15,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main className={styles.main}>
-				<Link href={'/enciclopedya'} className={styles.pedia}>
+				<Link href={'/wiki'} className={styles.wiki}>
 					<Image
 						src={wallpedia}
 						className={styles.img}
@@ -25,7 +25,7 @@ export default function Home() {
 						height={1000}
 						quality={50}
 					/>
-					<h2 className={styles.title}>CoCpedia</h2>
+					<h2 className={styles.title}>Wiki</h2>
 				</Link>
 				<Link href={'/blog'} className={styles.blog}>
 					<Image
@@ -50,6 +50,18 @@ export default function Home() {
 						quality={50}
 					/>
 					<h2 className={styles.title}>Shop</h2>
+				</Link>
+				<Link href={'/contact'} className={styles.contact}>
+					<Image
+						src={wallcontact}
+						className={styles.img}
+						alt={'clash of clans image of three barbarians figthing a cannon'}
+						priority={true}
+						width={1000}
+						height={1000}
+						quality={50}
+					/>
+					<h2 className={styles.title}>Contact</h2>
 				</Link>
 			</main>
 		</>

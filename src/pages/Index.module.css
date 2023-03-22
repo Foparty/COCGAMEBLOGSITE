@@ -9,25 +9,11 @@
 	overflow: hidden;
 }
 
-@media (min-width: 60rem) {
-	.main {
-		flex-direction: row;
-	}
-}
-
 .main > * {
 	display: flex;
 	flex: 1;
 	/* border: 2px solid red; */
 	overflow: hidden;
-}
-
-.section {
-	position: relative;
-}
-
-.section > * {
-	position: absolute;
 }
 
 .img {
@@ -39,7 +25,7 @@
 	max-height: 100%;
 }
 
-.pedia {
+.wiki {
 	position: relative;
 }
 
@@ -50,6 +36,10 @@
 .shop {
 	position: relative;
 }
+.contact {
+	position: relative;
+	display: none;
+}
 
 .title {
 	position: absolute;
@@ -59,8 +49,31 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 .link {
 	display: block;
+}
+
+@media (min-width: 60rem) {
+	.main {
+		display: grid;
+		grid-template-areas:
+			'wiki blog'
+			'shop contact';
+	}
+	.wiki {
+		grid-area: wiki;
+	}
+	.blog {
+		grid-area: blog;
+	}
+	.shop {
+		grid-area: shop;
+	}
+	.contact {
+		grid-area: contact;
+		display: flex;
+	}
 }
