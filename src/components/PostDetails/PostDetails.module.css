@@ -57,3 +57,22 @@
 .imgcontainer:hover {
 	flex: 4;
 }
+
+@media (min-width: 60rem) {
+	.post {
+		display: flex;
+	}
+
+	.cover {
+		position: sticky;
+		top: 0;
+		width: 50%;
+		flex: 1;
+		height: 100dvh;
+		object-fit: cover;
+		object-position: center bottom;
+	}
+	.content {
+		flex: 1;
+	}
+}

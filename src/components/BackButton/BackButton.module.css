@@ -1,0 +1,11 @@
+.back {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	background-color: #f39c2d;
+	padding: 0.2rem;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	border: none;
+}
