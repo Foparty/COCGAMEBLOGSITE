@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Nav.module.css';
 import { logo } from '../../../public';
-import Link from 'next/link';
 import Image from 'next/image';
 import MyLink from '../MyLink/MyLink';
 

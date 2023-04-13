@@ -5,7 +5,6 @@ import Link from 'next/link';
 import moment from 'moment';
 
 const PostCard = ({ post }) => {
-	console.log(post.categories);
 	return (
 		<article className={styles.singlecard}>
 			<div className={styles.imgcontainer}>

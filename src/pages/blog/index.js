@@ -15,17 +15,19 @@ const Blog = ({ posts }) => {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<aside className={styles.aside}>
+			<aside className={styles.categorybox}>
 				<Categories />
 			</aside>
-			<main className={styles.main}>
-				{posts.map((post) => {
-					return <PostCard post={post.node} key={post.node.title} />;
-				})}
-			</main>
-			<aside className={styles.aside}>
-				<PostWidget />
-			</aside>
+			<div className={styles.maingrid}>
+				<main className={styles.main}>
+					{posts.map((post) => {
+						return <PostCard post={post.node} key={post.node.title} />;
+					})}
+				</main>
+				<aside className={styles.asidead}>
+					<PostWidget />
+				</aside>
+			</div>
 		</>
 	);
 };

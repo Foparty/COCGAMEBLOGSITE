@@ -1,5 +1,6 @@
 .catcontainer {
-	width: min(100% - 2rem, 62rem);
+	width: 100%;
+	/* width: min(100% - 1rem, 76.88rem); */
 	margin: 0.3rem auto;
 	overflow: hidden;
 	/* padding: 1rem; */

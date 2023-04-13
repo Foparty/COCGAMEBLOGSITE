@@ -1,0 +1,17 @@
+.main {
+    /*margin-top: 4rem;*/
+    height: 100vh;
+    height: 100dvh;
+    overflow-x: scroll;
+
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column ;
+    grid-auto-columns: 45%;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    position: relative;
+}
+.main > * {
+    scroll-snap-align: start;
+}

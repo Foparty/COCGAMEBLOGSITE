@@ -12,7 +12,7 @@ const Categories = () => {
 	}, []);
 
 	return (
-		<main className={styles.catcontainer}>
+		<div className={styles.catcontainer}>
 			{categories.map(({ name, slug }) => {
 				return (
 					<Link href={`/category/${slug}`} className={styles.btn} key={slug}>
@@ -20,7 +20,7 @@ const Categories = () => {
 					</Link>
 				);
 			})}
-		</main>
+		</div>
 	);
 };
 
