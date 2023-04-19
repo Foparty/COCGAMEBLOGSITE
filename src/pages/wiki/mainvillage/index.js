@@ -9,6 +9,9 @@ const MainVillage = () => {
 			<Link href={'/wiki/sceneries'} className={styles.link}>
 				scene
 			</Link>
+			<Link href={'/wiki/troops'} className={styles.link}>
+				troops
+			</Link>
 			<Button text={'Click here!'} state={'red'} />
 		</main>
 	);

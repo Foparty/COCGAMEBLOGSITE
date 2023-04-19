@@ -1,5 +1,5 @@
 import React from 'react';
-import { data } from '@/pages/wiki/sceneries/data';
+// import { data } from '@/pages/wiki/sceneries/data.json';
 import styles from './Sceneries.module.css';
 import SceneryCard from '@/components/SceneryCard/SceneryCard';
 const Sceneries = () => {

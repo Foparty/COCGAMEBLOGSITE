@@ -1,0 +1,14 @@
+{
+	"troops": [
+
+	{
+		"name": "barbarian",
+		"img": "barbarian"
+	},
+	{
+		"name": "archer",
+		"img": "archer"
+	}
+	]
+}
+
