@@ -4,65 +4,9 @@ import Image from 'next/image';
 import moment from 'moment';
 import CommentsForm from '../CommentsForm/CommentsForm';
 import Comments from '../Comments/Comments';
+const parse = require('html-react-parser');
 
 const PostDetails = ({ post }) => {
-	const getContentFragment = (index, text, obj, type) => {
-		let modifiedText = text;
-
-		if (obj) {
-			if (obj.bold) {
-				modifiedText = <b key={index}>{text}</b>;
-			}
-
-			if (obj.italic) {
-				modifiedText = <em key={index}>{text}</em>;
-			}
-
-			if (obj.underline) {
-				modifiedText = <u key={index}>{text}</u>;
-			}
-		}
-
-		switch (type) {
-			case 'heading-three':
-				return (
-					<h3 key={index} className={styles.head3}>
-						{modifiedText.map((item, i) => (
-							<React.Fragment key={i}>{item}</React.Fragment>
-						))}
-					</h3>
-				);
-			case 'paragraph':
-				return (
-					<p key={index} className={styles.paragraph}>
-						{modifiedText.map((item, i) => (
-							<React.Fragment key={i}>{item}</React.Fragment>
-						))}
-					</p>
-				);
-			case 'heading-four':
-				return (
-					<h4 key={index} className={styles.head4}>
-						{modifiedText.map((item, i) => (
-							<React.Fragment key={i}>{item}</React.Fragment>
-						))}
-					</h4>
-				);
-			case 'image':
-				return (
-					<Image
-						key={index}
-						alt={obj.title}
-						src={obj.src}
-						width={600}
-						height={600}
-						className={styles.inimg}
-					/>
-				);
-			default:
-				return modifiedText;
-		}
-	};
 	return (
 		<article className={styles.post}>
 			<Image
@@ -74,7 +18,7 @@ const PostDetails = ({ post }) => {
 				className={styles.cover}
 				alt={post.title}
 			/>
-			<div className={styles.content}>
+			<div className={styles.container}>
 				<h1 className={styles.title}>{post.title}</h1>
 				<small className={styles.date}>{moment(post.createdAt).format('DD MMM, YYYY')}</small>
 				<section className={styles.growning}>
@@ -93,12 +37,7 @@ const PostDetails = ({ post }) => {
 						);
 					})}
 				</section>
-				{post.content.raw.children.map((typeObj, index) => {
-					const children = typeObj.children.map((item, itemindex) =>
-						getContentFragment(itemindex, item.text, item)
-					);
-					return getContentFragment(index, children, typeObj, typeObj.type);
-				})}
+				<section className={styles.content}>{parse(post.content.html)}</section>
 				<CommentsForm slug={post.slug} />
 				<Comments slug={post.slug} />
 			</div>

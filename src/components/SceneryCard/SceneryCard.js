@@ -16,10 +16,8 @@ const SceneryCard = ({ thumb, name, img }) => {
 					className={styles.img}
 					src={thumb}
 					alt={name}
-					sizes={'100vw'}
-					// width={200}
-					// height={200}
-					layout={'responsive'}
+					width={773}
+					height={773}
 					quality={60}
 					onClick={toggleImage}
 				/>
