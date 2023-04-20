@@ -2,7 +2,6 @@ import Categories from '@/components/Categories/Categories';
 import PostCard from '@/components/PostCard/PostCard';
 import PostWidget from '@/components/PostWidget/PostWidget';
 import Head from 'next/head';
-import React from 'react';
 import { getPosts } from '../../services';
 import styles from './Blog.module.css';
 

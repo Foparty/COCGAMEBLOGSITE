@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
 import styles from './MyLink.module.css';
 
 const MyLink = ({ url, text, clase, children }) => {

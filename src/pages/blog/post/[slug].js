@@ -1,4 +1,3 @@
-import React from 'react';
 import { getPostDetails, getPosts } from '../../../services';
 import styles from './Post.module.css';
 import PostDetails from '@/components/PostDetails/PostDetails';

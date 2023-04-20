@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './PostWidget.module.css';
 import Image from 'next/image';
 
@@ -15,7 +15,7 @@ const PostWidget = ({ categories, slug }) => {
 		} else {
 			getRecentPosts().then((res) => setRelatedPost(res));
 		}
-	}, [slug]);
+	}, [slug, categories]);
 
 	return (
 		<div className={styles.container}>
