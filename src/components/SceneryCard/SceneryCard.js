@@ -8,7 +8,7 @@ const SceneryCard = ({ thumb, name, img }) => {
 		setImage(false);
 		setImage(!image);
 	}
-
+	console.log(img);
 	return (
 		<>
 			<div className={styles.card}>

@@ -1,8 +1,10 @@
 {
-	"sceneries": {
-		"id": 1234,
-		"name": "Classic Scenery",
-		"thumb": "./img/classicthumb",
-		"img": "classic"
-	}
+	"sceneries": [
+		{
+			"id": 1234,
+			"name": "classic",
+			"thumb": "/img/scenery/01classicthumb.png",
+			"img": "/img/scenery/01classic.jpg"
+		}
+	]
 }

@@ -1,11 +1,11 @@
-import { sceneries } from './data';
+import data from './data.json';
 import styles from './Sceneries.module.css';
 import SceneryCard from '@/components/SceneryCard/SceneryCard';
 const Sceneries = () => {
-	console.log(sceneries);
+	console.log(data);
 	return (
 		<main className={styles.main}>
-			{sceneries.map((item) => {
+			{data.sceneries.map((item) => {
 				return <SceneryCard key={item.id} name={item.name} thumb={item.thumb} img={item.img} />;
 			})}
 		</main>
