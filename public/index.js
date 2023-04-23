@@ -1,1 +1,1 @@
-export { default as logo } from './coclogo.png';
+export { default as logo } from './logo.webp';

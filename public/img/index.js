@@ -7,3 +7,4 @@ export { default as back } from './back-arrow-svgrepo-com.svg';
 export { default as main } from './mainvillage.png';
 export { default as capital } from './capital.png';
 export { default as nocturna } from './nocturna.png';
+export { default as landingbg } from './landingbg.jpg';
